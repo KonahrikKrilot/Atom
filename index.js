@@ -1,12 +1,11 @@
 const Discord = require('discord.js');
 const fs = require('fs')
 const client = new Discord.Client();
+const token = process.env.token
 
 var prefix = "!";
 
 const warns = JSON.parse(fs.readFileSync('./warns.json'))
-
-client.login('NTYyOTUwODc2NDA3Mzk4NDAx.XKT86w.IGec7w2GfigsFAdiNxGPn8oS4Dc');
  
 client.on('message', message =>{
     if(message.content === "tu fais quoi?"){
